@@ -48,7 +48,7 @@ public class MoodAnalyserTests {
 
     @Test
     public void givenMsg_shouldInformUser_whenItPassEmptyString_ByConstructor() throws MoodAnalysisException {
-        System.out.println("givenMsg_shouldReturnHappy_whenItPassNull_ByConstructor");
+        System.out.println("givenMsg_shouldInformUser_whenItPassEmptyString_ByConstructor");
         try {
             ExpectedException expectedException = ExpectedException.none();
             expectedException.expect(MoodAnalysisException.class);
