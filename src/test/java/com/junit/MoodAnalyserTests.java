@@ -22,7 +22,7 @@ public class MoodAnalyserTests {
     }
 
     @Test
-    public void givenMsg_shouldThrowException_whenItPassNull_ByConstructor() {
+    public void givenMsg_shouldReturnHappy_whenItPassNull_ByConstructor() {
         System.out.println("givenMsg_shouldReturnHappy_whenItPassNull_ByConstructor");
         MoodAnalyser moodAnalyser = new MoodAnalyser(null);
         String mood=moodAnalyser.analyseMood();
