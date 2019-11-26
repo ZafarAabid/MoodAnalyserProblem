@@ -1,3 +1,1 @@
-2givenMsg_shouldReturnSad_whenItsSad_ByConstructor
-;givenMsg_shouldThrowException_whenItPassNull_ByConstructor
-2givenMsg_shouldReturnSad_whenItsSad_ByConstructor
+8givenMsg_shouldReturnHappy_whenItPassNull_ByConstructor
