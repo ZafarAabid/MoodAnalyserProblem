@@ -1,20 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.junit.MoodAnalyserTests" tests="7" skipped="0" failures="0" errors="0" timestamp="2019-11-26T10:30:58" hostname="FH400" time="0.039">
+<testsuite name="com.junit.MoodAnalyserTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2019-11-26T12:22:12" hostname="FH400" time="0.008">
   <properties/>
-  <testcase name="givenMsg_shouldInformUser_whenItPassEmptyString_ByConstructor" classname="com.junit.MoodAnalyserTests" time="0.011"/>
-  <testcase name="givenMsg_shouldReturnHappy_whenItsHappy_ByConstructor" classname="com.junit.MoodAnalyserTests" time="0.001"/>
-  <testcase name="givenMoodAnalyserClass_whenImproperName_classNotFoundException" classname="com.junit.MoodAnalyserTests" time="0.002"/>
-  <testcase name="givenMsg_shouldInformUser_whenItPassNull_ByConstructor" classname="com.junit.MoodAnalyserTests" time="0.004"/>
-  <testcase name="givenMoodAnalyserClass_whenImproperMethodName_MethodNotFoundException" classname="com.junit.MoodAnalyserTests" time="0.004"/>
-  <testcase name="givenMoodAnalyserClass_whenProper_returnObject" classname="com.junit.MoodAnalyserTests" time="0.004"/>
-  <testcase name="givenMsg_shouldReturnSad_whenItsSad_ByConstructor" classname="com.junit.MoodAnalyserTests" time="0.004"/>
-  <system-out><![CDATA[givenMsg_shouldInformUser_whenItPassEmptyString_ByConstructor
-givenMsg_shouldReturnSad_whenItsSad_ByConstructor
-givenMoodAnalyserClass_whenImproperName_classNotFoundException
-givenMsg_shouldReturnHappy_whenItPassNull_ByConstructor
-givenMoodAnalyserClass_whenImproperMethodName_MethodNotFoundException
-givenMoodAnalyserClass_whenProper_returnObject
-givenMsg_shouldReturnSad_whenItsSad_ByConstructor
+  <testcase name="givenMoodAnalyserClass_whenImproperMethodName_MethodNotFoundException_WithParameter" classname="com.junit.MoodAnalyserTests" time="0.008"/>
+  <system-out><![CDATA[givenMoodAnalyserClass_whenImproperMethodName_MethodNotFoundException_WithParameter
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

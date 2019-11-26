@@ -89,6 +89,40 @@ public class MoodAnalyserTests {
 
         }
     }
+    @Test
+    public void givenMoodAnalyserClass_whenProper_returnObject_WithParameters() throws MoodAnalysisException {
+        System.out.println("givenMoodAnalyserClass_whenProper_returnObject");
+        MoodAnalyser moodAnalyser=MoodAnalyserFactory.createMoodAnalyser("I'm in HAPPY mood");
+        try {
+            String mood = moodAnalyser.analyseMood();
+            Assert.assertEquals("HAPPY",mood);
+        } catch (MoodAnalysisException e) {
+            e.printStackTrace();
+        }
+    }
 
+    @Test
+    public void givenMoodAnalyserClass_whenImproperName_classNotFoundException_withParameter() throws MoodAnalysisException {
+        System.out.println("givenMoodAnalyserClass_whenImproperName_classNotFoundException_withParameter");
+        MoodAnalyser moodAnalyser=MoodAnalyserFactory.createMoodAnalyser("I'm in HAPPY mood");
+        try {
+            String mood = moodAnalyser.analyseMood();
+            Assert.assertEquals("HAPPY",mood);
+        } catch (MoodAnalysisException e) {
+            e.printStackTrace();
+        }
+    }
+
+    @Test
+    public void givenMoodAnalyserClass_whenImproperMethodName_MethodNotFoundException_WithParameter() throws MoodAnalysisException {
+        System.out.println("givenMoodAnalyserClass_whenImproperMethodName_MethodNotFoundException_WithParameter");
+        MoodAnalyser moodAnalyser=MoodAnalyserFactory.createMoodAnalyser("I'm in HAPPY mood");
+        try {
+            String mood = moodAnalyser.analyseMood();
+            Assert.assertEquals("HAPPY",mood);
+        } catch (MoodAnalysisException e) {
+            e.printStackTrace();
+        }
+    }
 
 }
