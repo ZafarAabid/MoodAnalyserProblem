@@ -62,8 +62,24 @@ public class MoodAnalyserTests {
 
     @Test
     public void givenMoodAnalyserClass_whenProper_returnObject() throws MoodAnalysisException {
+        System.out.println("givenMoodAnalyserClass_whenProper_returnObject");
         MoodAnalyser moodAnalyser=MoodAnalyserFactory.createMoodAnalyser();
         Assert.assertEquals(MoodAnalyserFactory.createMoodAnalyser(),moodAnalyser);
+    }
+
+    @Test
+    public void givenMoodAnalyserClass_whenImproperName_classNotFoundException() throws MoodAnalysisException {
+        System.out.println("givenMoodAnalyserClass_whenImproperName_classNotFoundException");
+
+      try {
+          MoodAnalyser moodAnalyser = MoodAnalyserFactory.createMoodAnalyser();
+
+          Assert.assertEquals(MoodAnalyserFactory.createMoodAnalyser(), moodAnalyser);
+      }
+      catch (MoodAnalysisException mea)
+      {
+          Assert.assertEquals("No Such Class Present",mea.getMessage());
+      }
     }
 
 
