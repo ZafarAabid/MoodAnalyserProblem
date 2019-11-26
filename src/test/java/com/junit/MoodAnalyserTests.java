@@ -22,13 +22,6 @@ public class MoodAnalyserTests {
         Assert.assertEquals("HAPPY",mood);
     }
 
-    @Test
-    public void givenMsg_shouldReturnHappy_whenItPassNull_ByConstructor() throws MoodAnalysisException {
-        System.out.println("givenMsg_shouldReturnHappy_whenItPassNull_ByConstructor");
-        MoodAnalyser moodAnalyser = new MoodAnalyser(null);
-        String mood=moodAnalyser.analyseMood();
-        Assert.assertEquals("HAPPY",mood);
-    }
 
     @Test
     public void givenMsg_shouldInformUser_whenItPassNull_ByConstructor() throws MoodAnalysisException {
@@ -82,7 +75,20 @@ public class MoodAnalyserTests {
       }
     }
 
+    @Test
+    public void givenMoodAnalyserClass_whenImproperMethodName_MethodNotFoundException() throws MoodAnalysisException {
+        System.out.println("givenMoodAnalyserClass_whenImproperMethodName_MethodNotFoundException");
 
+        try {
+            MoodAnalyser moodAnalyser = MoodAnalyserFactory.createMoodAnalyser();
+
+            Assert.assertEquals(MoodAnalyserFactory.createMoodAnalyser(), moodAnalyser);
+        }
+        catch (MoodAnalysisException mea)
+        {
+            Assert.assertEquals("No Such Method Present",mea.getMessage());
+        }
+    }
 
 
 }

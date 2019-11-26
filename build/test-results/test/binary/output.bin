@@ -1,1 +1,7 @@
-?givenMoodAnalyserClass_whenImproperName_classNotFoundException
+>givenMsg_shouldInformUser_whenItPassEmptyString_ByConstructor
+2givenMsg_shouldReturnSad_whenItsSad_ByConstructor
+?givenMoodAnalyserClass_whenImproperName_classNotFoundException
+8givenMsg_shouldReturnHappy_whenItPassNull_ByConstructor
+?givenMoodAnalyserClass_whenImproperName_classNotFoundException
+/givenMoodAnalyserClass_whenProper_returnObject
+2givenMsg_shouldReturnSad_whenItsSad_ByConstructor

@@ -6,14 +6,14 @@ import java.lang.reflect.InvocationTargetException;
 public class MoodAnalyserFactory {
         public static MoodAnalyser createMoodAnalyser() throws MoodAnalysisException {
             try {
-                Class<?> moodAnalyseClass = Class.forName("com.junit.MoodAnalyser1");
+                Class<?> moodAnalyseClass = Class.forName("com.junit.MoodAnalyser");
                 Constructor<?> moodConstructor = moodAnalyseClass.getConstructor();
                 Object moodObject = moodConstructor.newInstance();
                 return (MoodAnalyser) moodObject;
             } catch (ClassNotFoundException e) {
                 throw new MoodAnalysisException("No Such Class Present");
             } catch (NoSuchMethodException e) {
-                e.printStackTrace();
+                throw new MoodAnalysisException("No Such Method Present");
             } catch (InstantiationException e) {
                 e.printStackTrace();
             } catch (IllegalAccessException e) {
