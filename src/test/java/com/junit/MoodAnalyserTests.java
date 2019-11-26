@@ -60,6 +60,12 @@ public class MoodAnalyserTests {
         }
     }
 
+    @Test
+    public void givenMoodAnalyserClass_whenProper_returnObject() throws MoodAnalysisException {
+        MoodAnalyser moodAnalyser=MoodAnalyserFactory.createMoodAnalyser();
+        Assert.assertEquals(MoodAnalyserFactory.createMoodAnalyser(),moodAnalyser);
+    }
+
 
 
 

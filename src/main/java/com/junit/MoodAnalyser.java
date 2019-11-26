@@ -21,5 +21,11 @@ public class MoodAnalyser {
             throw new MoodAnalysisException(MoodAnalysisException.ExceptionType.ENTERED_NULL,"Mood cannot be Null");
         }
     }
+    public boolean equals(Object thisObject)
+    {
+        if(thisObject instanceof MoodAnalyser)
+            return true;
+        return false;
+    }
 
 }
