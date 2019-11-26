@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.junit.MoodAnalyserTests" tests="2" skipped="0" failures="0" errors="0" timestamp="2019-11-26T05:53:12" hostname="FH400" time="0.012">
+<testsuite name="com.junit.MoodAnalyserTests" tests="3" skipped="0" failures="0" errors="0" timestamp="2019-11-26T06:07:45" hostname="FH400" time="0.029">
   <properties/>
-  <testcase name="givenMsg_shouldReturnHappy_whenItsHappy_ByConstructor" classname="com.junit.MoodAnalyserTests" time="0.008"/>
-  <testcase name="givenMsg_shouldReturnSad_whenItsSad_ByConstructor" classname="com.junit.MoodAnalyserTests" time="0.001"/>
+  <testcase name="givenMsg_shouldReturnHappy_whenItsHappy_ByConstructor" classname="com.junit.MoodAnalyserTests" time="0.011"/>
+  <testcase name="givenMsg_shouldThrowException_whenItPassNull_ByConstructor" classname="com.junit.MoodAnalyserTests" time="0.005"/>
+  <testcase name="givenMsg_shouldReturnSad_whenItsSad_ByConstructor" classname="com.junit.MoodAnalyserTests" time="0.005"/>
   <system-out><![CDATA[givenMsg_shouldReturnSad_whenItsSad_ByConstructor
+givenMsg_shouldThrowException_whenItPassNull_ByConstructor
 givenMsg_shouldReturnSad_whenItsSad_ByConstructor
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>
