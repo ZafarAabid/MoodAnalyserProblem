@@ -2,6 +2,6 @@
 2givenMsg_shouldReturnSad_whenItsSad_ByConstructor
 ?givenMoodAnalyserClass_whenImproperName_classNotFoundException
 8givenMsg_shouldReturnHappy_whenItPassNull_ByConstructor
-?givenMoodAnalyserClass_whenImproperName_classNotFoundException
+FgivenMoodAnalyserClass_whenImproperMethodName_MethodNotFoundException
 /givenMoodAnalyserClass_whenProper_returnObject
 2givenMsg_shouldReturnSad_whenItsSad_ByConstructor

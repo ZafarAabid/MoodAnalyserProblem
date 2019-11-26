@@ -67,7 +67,7 @@ public class MoodAnalyserTests {
       try {
           MoodAnalyser moodAnalyser = MoodAnalyserFactory.createMoodAnalyser();
 
-          Assert.assertEquals(MoodAnalyserFactory.createMoodAnalyser(), moodAnalyser);
+          Assert.assertEquals(MoodAnalyserFactory.createMoodAnalyserClassNotFound(), moodAnalyser);
       }
       catch (MoodAnalysisException mea)
       {
@@ -81,12 +81,12 @@ public class MoodAnalyserTests {
 
         try {
             MoodAnalyser moodAnalyser = MoodAnalyserFactory.createMoodAnalyser();
-
-            Assert.assertEquals(MoodAnalyserFactory.createMoodAnalyser(), moodAnalyser);
+            Assert.assertEquals(MoodAnalyserFactory.createMoodAnalyserMethodNotFound(), moodAnalyser);
         }
         catch (MoodAnalysisException mea)
         {
             Assert.assertEquals("No Such Method Present",mea.getMessage());
+
         }
     }
 
