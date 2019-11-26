@@ -1,10 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.junit.MoodAnalyserTests" tests="2" skipped="0" failures="0" errors="0" timestamp="2019-11-26T05:06:14" hostname="FH400" time="0.012">
+<testsuite name="com.junit.MoodAnalyserTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2019-11-26T05:20:35" hostname="FH400" time="0.011">
   <properties/>
-  <testcase name="givenMsg_shouldReturnSad_whenItsSad" classname="com.junit.MoodAnalyserTests" time="0.009"/>
-  <testcase name="givenMsg_shouldReturnHappy_whenItsInAnyMood" classname="com.junit.MoodAnalyserTests" time="0.001"/>
-  <system-out><![CDATA[givenMsg_shouldReturnSad_whenItsSad
-givenMsg_shouldReturnHappy_whenItsInAnyMood
+  <testcase name="givenMsg_shouldReturnSad_whenItsSad_ByConstructor" classname="com.junit.MoodAnalyserTests" time="0.011"/>
+  <system-out><![CDATA[givenMsg_shouldReturnHappy_whenItsSad_ByConstructor
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
