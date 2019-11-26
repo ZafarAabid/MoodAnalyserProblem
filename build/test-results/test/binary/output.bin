@@ -1,1 +1,4 @@
-4givenMsg_shouldReturnHappy_whenItsSad_ByConstructor
+$givenMsg_shouldReturnSad_whenItsSad
+,givenMsg_shouldReturnHappy_whenItsInAnyMood
+2givenMsg_shouldReturnSad_whenItsSad_ByConstructor
+2givenMsg_shouldReturnSad_whenItsSad_ByConstructor
