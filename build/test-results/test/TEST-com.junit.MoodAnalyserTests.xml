@@ -1,13 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.junit.MoodAnalyserTests" tests="4" skipped="0" failures="0" errors="0" timestamp="2019-11-26T05:27:25" hostname="FH400" time="0.027">
+<testsuite name="com.junit.MoodAnalyserTests" tests="2" skipped="0" failures="0" errors="0" timestamp="2019-11-26T05:53:12" hostname="FH400" time="0.012">
   <properties/>
-  <testcase name="givenMsg_shouldReturnSad_whenItsSad" classname="com.junit.MoodAnalyserTests" time="0.009"/>
-  <testcase name="givenMsg_shouldReturnHappy_whenItsInAnyMood" classname="com.junit.MoodAnalyserTests" time="0.001"/>
-  <testcase name="givenMsg_shouldReturnHappy_whenItsHappy_ByConstructor" classname="com.junit.MoodAnalyserTests" time="0.012"/>
-  <testcase name="givenMsg_shouldReturnSad_whenItsSad_ByConstructor" classname="com.junit.MoodAnalyserTests" time="0.0"/>
-  <system-out><![CDATA[givenMsg_shouldReturnSad_whenItsSad
-givenMsg_shouldReturnHappy_whenItsInAnyMood
-givenMsg_shouldReturnSad_whenItsSad_ByConstructor
+  <testcase name="givenMsg_shouldReturnHappy_whenItsHappy_ByConstructor" classname="com.junit.MoodAnalyserTests" time="0.008"/>
+  <testcase name="givenMsg_shouldReturnSad_whenItsSad_ByConstructor" classname="com.junit.MoodAnalyserTests" time="0.001"/>
+  <system-out><![CDATA[givenMsg_shouldReturnSad_whenItsSad_ByConstructor
 givenMsg_shouldReturnSad_whenItsSad_ByConstructor
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>
