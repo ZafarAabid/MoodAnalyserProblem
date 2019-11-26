@@ -42,7 +42,21 @@ public class MoodAnalyserTests {
         catch (MoodAnalysisException mae)
         {
             /* TEST WILL PASS EVEN WITHOUT ASSERT,ITS JUST TO VALIDATE THE EXCEPTION MESSAGE*/
-           Assert.assertEquals("Invalid Mood",mae.getMessage());
+           Assert.assertEquals("Mood cannot be Null",mae.getMessage());
+        }
+    }
+
+    @Test
+    public void givenMsg_shouldInformUser_whenItPassEmptyString_ByConstructor() throws MoodAnalysisException {
+        System.out.println("givenMsg_shouldReturnHappy_whenItPassNull_ByConstructor");
+        try {
+            ExpectedException expectedException = ExpectedException.none();
+            expectedException.expect(MoodAnalysisException.class);
+            MoodAnalyser moodAnalyser = new MoodAnalyser("");
+            String mood = moodAnalyser.analyseMood();
+        } catch (MoodAnalysisException mae) {
+            /* TEST WILL PASS EVEN WITHOUT ASSERT,ITS JUST TO VALIDATE THE EXCEPTION MESSAGE*/
+            Assert.assertEquals("Mood cannot be Empty", mae.getMessage());
         }
     }
 

@@ -10,7 +10,7 @@ public class MoodAnalyser {
     public String analyseMood() throws MoodAnalysisException {
         try {
             if (message.length() ==0)
-                throw new MoodAnalysisException(MoodAnalysisException.ExceptionType.ENTERED_EMPTY,"Invalid Mood");
+                throw new MoodAnalysisException(MoodAnalysisException.ExceptionType.ENTERED_EMPTY,"Mood cannot be Empty");
             else if (message.contains("SAD"))
                 return "SAD";
             else
@@ -18,7 +18,7 @@ public class MoodAnalyser {
         }
         catch (NullPointerException ne)
         {
-            throw new MoodAnalysisException(MoodAnalysisException.ExceptionType.ENTERED_NULL,"Invalid Mood");
+            throw new MoodAnalysisException(MoodAnalysisException.ExceptionType.ENTERED_NULL,"Mood cannot be Null");
         }
     }
 

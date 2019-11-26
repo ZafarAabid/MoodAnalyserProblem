@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.junit.MoodAnalyserTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2019-11-26T06:51:55" hostname="FH400" time="0.011">
+<testsuite name="com.junit.MoodAnalyserTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2019-11-26T06:57:31" hostname="FH400" time="0.02">
   <properties/>
-  <testcase name="givenMsg_shouldInformUser_whenItPassNull_ByConstructor" classname="com.junit.MoodAnalyserTests" time="0.011"/>
+  <testcase name="givenMsg_shouldInformUser_whenItPassNull_ByConstructor" classname="com.junit.MoodAnalyserTests" time="0.02"/>
   <system-out><![CDATA[givenMsg_shouldReturnHappy_whenItPassNull_ByConstructor
+Mood cannot be Null
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
