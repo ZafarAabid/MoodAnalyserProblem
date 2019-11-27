@@ -2,9 +2,10 @@ package com.junit;
 
 import java.applet.Applet;
 import java.lang.reflect.Constructor;
+import java.lang.reflect.Field;
 import java.lang.reflect.InvocationTargetException;
 
-public class MoodAnalyserFactory {
+public class MoodAnalyserReflactor {
         public static MoodAnalyser createMoodAnalyser() throws MoodAnalysisException {
             try {
                 Class<?> moodAnalyseClass = Class.forName("com.junit.MoodAnalyser");
@@ -125,4 +126,32 @@ public class MoodAnalyserFactory {
         return null;
     }
 
+    public static Object invokeMethod(Object moodAnalyzerObject, String methodName) throws MoodAnalysisException {
+        try {
+            return moodAnalyzerObject.getClass().getMethod(methodName).invoke(moodAnalyzerObject);
+        } catch (NoSuchMethodException e) {
+            throw new MoodAnalysisException(MoodAnalysisException.ExceptionType.NO_SUCH_METHOD,
+                    "Define proper method!......");
+        } catch (InvocationTargetException e) {
+            throw new MoodAnalysisException(MoodAnalysisException.ExceptionType.METHOD_INVOCATION_ISSUE,
+                    "May be Issue with Data Entered", e);
+        } catch (IllegalAccessException e) {
+            throw new MoodAnalysisException(MoodAnalysisException.ExceptionType.NO_ACCESS,"Not Accessible!",e);
+        }
+    }
+
+    public static void setFieldValue(Object myObject, String fieldName, String fieldValue) throws MoodAnalysisException {
+        try {
+            Field field = myObject.getClass().getDeclaredField(fieldName);
+            field.setAccessible(true);
+            field.set(myObject,fieldValue);
+        } catch (NoSuchFieldException e) {
+            throw new MoodAnalysisException(MoodAnalysisException.ExceptionType.NO_SUCH_METHOD,
+                    "Define Proper Field Name!......");
+        } catch (IllegalAccessException e) {
+            throw new MoodAnalysisException(MoodAnalysisException.ExceptionType.NO_ACCESS,
+                    "May be Issue with Access", e);
+        }
+
+    }
 }
