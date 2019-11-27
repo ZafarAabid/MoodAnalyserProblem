@@ -124,5 +124,4 @@ public class MoodAnalyserTests {
             e.printStackTrace();
         }
     }
-
 }
