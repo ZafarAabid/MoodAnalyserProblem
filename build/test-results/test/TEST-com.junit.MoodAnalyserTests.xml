@@ -1,7 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.junit.MoodAnalyserTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2019-11-27T13:01:24" hostname="FH400" time="0.003">
+<testsuite name="com.junit.MoodAnalyserTests" tests="15" skipped="0" failures="0" errors="0" timestamp="2019-11-27T13:12:19" hostname="FH400" time="0.045">
   <properties/>
-  <testcase name="givenMoodAnalyzer_OnChangeMood_Should_Return_Happy" classname="com.junit.MoodAnalyserTests" time="0.003"/>
-  <system-out><![CDATA[]]></system-out>
+  <testcase name="givenMoodAnalyserClass_withDefaultConstructor_ShouldReturnObject" classname="com.junit.MoodAnalyserTests" time="0.005"/>
+  <testcase name="givenMsg_shouldInformUser_whenItPassEmptyString_ByConstructor" classname="com.junit.MoodAnalyserTests" time="0.015"/>
+  <testcase name="givenMsg_shouldReturnHappy_whenItsHappy_ByConstructor" classname="com.junit.MoodAnalyserTests" time="0.001"/>
+  <testcase name="givenMoodAnalyserClass_whenImproperMethodName_MethodNotFoundException_WithParameter" classname="com.junit.MoodAnalyserTests" time="0.002"/>
+  <testcase name="givenMoodAnalyserClass_whenImproperName_classNotFoundException" classname="com.junit.MoodAnalyserTests" time="0.003"/>
+  <testcase name="givenMoodAnalyzer_OnChangeMood_Should_Return_Happy" classname="com.junit.MoodAnalyserTests" time="0.0"/>
+  <testcase name="givenMsg_shouldInformUser_whenItPassNull_ByConstructor" classname="com.junit.MoodAnalyserTests" time="0.001"/>
+  <testcase name="givenHappyMsg_withDefaultConstructor_ShouldReturnHappy" classname="com.junit.MoodAnalyserTests" time="0.001"/>
+  <testcase name="givenMoodAnalyserClass_whenImproperMethodName_MethodNotFoundException" classname="com.junit.MoodAnalyserTests" time="0.003"/>
+  <testcase name="givenHappyMessage_WithReflection_ShouldReturnHappy" classname="com.junit.MoodAnalyserTests" time="0.001"/>
+  <testcase name="givenMoodAnalyserClass_whenProper_returnObject_WithParameters" classname="com.junit.MoodAnalyserTests" time="0.002"/>
+  <testcase name="givenMoodAnalyserClass_whenProper_returnObject" classname="com.junit.MoodAnalyserTests" time="0.0"/>
+  <testcase name="givenMsg_shouldReturnSad_whenItsSad_ByConstructor" classname="com.junit.MoodAnalyserTests" time="0.002"/>
+  <testcase name="givenMoodAnalyserClass_whenImproperName_classNotFoundException_withParameter" classname="com.junit.MoodAnalyserTests" time="0.001"/>
+  <testcase name="givenMoodAnalyserClass_whenProper_ShouldReturnObject" classname="com.junit.MoodAnalyserTests" time="0.0"/>
+  <system-out><![CDATA[givenMsg_shouldInformUser_whenItPassEmptyString_ByConstructor
+givenMsg_shouldReturnSad_whenItsSad_ByConstructor
+givenMoodAnalyserClass_whenImproperMethodName_MethodNotFoundException_WithParameter
+givenMoodAnalyserClass_whenImproperName_classNotFoundException
+givenMsg_shouldReturnHappy_whenItPassNull_ByConstructor
+givenMoodAnalyserClass_whenImproperMethodName_MethodNotFoundException
+givenMoodAnalyserClass_whenProper_returnObject
+givenMoodAnalyserClass_whenProper_returnObject
+givenMsg_shouldReturnSad_whenItsSad_ByConstructor
+givenMoodAnalyserClass_whenImproperName_classNotFoundException_withParameter
+]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

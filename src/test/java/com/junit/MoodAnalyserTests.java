@@ -3,10 +3,7 @@ package com.junit;
 import org.junit.Assert;
 import org.junit.Test;
 import org.junit.rules.ExpectedException;
-
-import java.applet.Applet;
 import java.lang.reflect.Constructor;
-import java.lang.reflect.InvocationTargetException;
 
 public class MoodAnalyserTests {
 
@@ -17,7 +14,6 @@ public class MoodAnalyserTests {
         String mood=moodAnalyser.analyseMood();
         Assert.assertEquals("SAD",mood);
     }
-
     @Test
     public void givenMsg_shouldReturnHappy_whenItsHappy_ByConstructor() throws MoodAnalysisException {
         System.out.println("givenMsg_shouldReturnSad_whenItsSad_ByConstructor");
@@ -25,8 +21,6 @@ public class MoodAnalyserTests {
         String mood=moodAnalyser.analyseMood();
         Assert.assertEquals("HAPPY",mood);
     }
-
-
     @Test
     public void givenMsg_shouldInformUser_whenItPassNull_ByConstructor() throws MoodAnalysisException {
         System.out.println("givenMsg_shouldReturnHappy_whenItPassNull_ByConstructor");
@@ -184,8 +178,5 @@ public class MoodAnalyserTests {
             e.printStackTrace();
         }
     }
-
-
-
 
 }
